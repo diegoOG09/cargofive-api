@@ -2,7 +2,7 @@
   <header id="header">
     <nav id="nav">
       <div class="logo">
-        <img src="logo.png" alt="Logo de cargofive" />
+        <img src="/logo.png" alt="Logo de cargofive" />
       </div>
       <div class="menu">
         <li><a href="#">Benefits</a></li>
