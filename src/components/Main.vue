@@ -9,7 +9,7 @@
         type="text"
         placeholder="Busca el nombre, pais o continente..."
       />
-      <button v-on:click="searchData" class="consultarBtn">Buscar</button>
+      <!-- <button v-on:click="searchData" class="consultarBtn">Buscar</button> -->
     </div>
 
     <div class="container">
@@ -88,7 +88,6 @@ export default {
         page: this.page,
         country: this.search,
       };
-
       let result = axios
         .get("http://apitest.cargofive.com/api/ports", { params })
         .then((res) => {
@@ -177,9 +176,10 @@ export default {
   }
   #search-input {
     border: 1px solid rgb(235, 235, 235);
-    border-radius: 7px 0 0 7px;
+    border-radius: 7px 7px 7px 7px;
     padding: 0.7rem 1rem;
     width: 18.5rem;
+    margin: 1.5rem 0 2rem 0;
   }
 
   .pagination {
@@ -217,9 +217,6 @@ export default {
     }
     .title {
       margin-bottom: 1rem;
-    }
-    #search-input {
-      border-radius: 7px 7px 7px 7px;
     }
     .tg {
       display: block;
