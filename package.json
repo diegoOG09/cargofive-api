@@ -1,0 +1,22 @@
+{
+  "name": "cargofive-api",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.25",
+    "vue-table-dynamic": "^0.4.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "vite": "^2.8.0"
+  }
+}
