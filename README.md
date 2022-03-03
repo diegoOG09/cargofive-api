@@ -31,7 +31,7 @@ La paginación se realiza mediante una validación ternaria en la cuál se compr
 
 Los filtros los que hice implementar a modo de una barra de búsqueda porque se me hace una buena forma de incluir varios parámetros en un solo lugar. La búsqueda puede realizarse mediante nombre, continente o país.
 ¿Cómo funciona por detrás? Tengo que aclarar que la búsqueda se hace mediante un parámetro que se pasa en la URL de la petición y solo trae la información del número de la página actual, no hace una búsqueda por todas las páginas ya que creo que es un uso más alto de recursos...
-Para la búsqueda con filtros escribí una función llamada "portFilter" la cual retorna un array filtrado dependiendo lo que se pase en el parametro "search", ya sea nombre, pais o continente.
+Para la búsqueda con filtros escribí una función llamada "countriesFilter" la cual retorna un array filtrado dependiendo lo que se pase en el parametro "search", ya sea nombre, pais o continente.
 Cada vez que se cambia de página se realizar un suave scroll hasta arriba de la página para que el cambio no sea tan brusco y sea amigable con los usuarios.
 
 #### Estilos
