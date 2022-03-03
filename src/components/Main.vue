@@ -9,7 +9,6 @@
         type="text"
         placeholder="Busca el nombre, pais o continente..."
       />
-      <!-- <button v-on:click="searchData" class="consultarBtn">Buscar</button> -->
     </div>
 
     <div class="container">
@@ -38,13 +37,11 @@
         <a class="pagination-previous" v-on:click="changePage(page - 1)"
           >Anterior</a
         >
-
         <ul class="pagination-list">
           <li>
             <a class="pagination-link is-current">{{ page }}</a>
           </li>
         </ul>
-
         <a class="pagination-next" v-on:click="changePage(page + 1)"
           >Siguiente</a
         >
@@ -89,8 +86,9 @@ export default {
         country: this.search,
       };
       let result = axios
-        .get("http://apitest.cargofive.com/api/ports", { params })
+        .get("https://fake-cargofive.herokuapp.com/api/ports", { params })
         .then((res) => {
+          console.log(res);
           this.ports = res.data.data;
           this.pages = res.data.meta.last_page;
         })
